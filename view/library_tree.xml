@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<tree string="library">
+    <field name="title"/>
+    <field name="isbn"/>
+    <field name="subject"/>
+    <field name="abstract"/>
+</tree>

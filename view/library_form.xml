@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<form string="Library">
+    <label name="title"/>
+    <field name="title"/>
+    <label name="isbn"/>
+    <field name="isbn"/>
+    <label name="subject"/>
+    <field name="subject"/>
+    <label name="abstract"/>
+    <field name="abstract"/>
+</form>

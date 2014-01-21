@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="library_view_form">
+            <field name="model">library.library</field>
+            <field name="type">form</field>
+            <field name="name">library_form</field>
+        </record>
+        <record model="ir.ui.view" id="library_view_tree">
+            <field name="model">library.library</field>
+            <field name="type">tree</field>
+            <field name="name">library_tree</field>
+        </record>
+        <record model="ir.action.act_window" id="act_library_form">
+            <field name="name">Library</field>
+            <field name="res_model">library.library</field>
+        </record>
+           <record model="ir.action.act_window.view" id="act_library_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="library_view_tree"/>
+            <field name="act_window" ref="act_library_form"/>
+        </record>
+          <record model="ir.action.act_window.view" id="act_library_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="library_view_form"/>
+            <field name="act_window" ref="act_library_form"/>
+        </record>
+         <menuitem parent="ir.menu_administration" action="act_library_form"
+            id="menu_library_form"/>    
+    </data>
+</tryton>
